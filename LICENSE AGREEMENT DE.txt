@@ -1,0 +1,54 @@
+Endnutzer-Lizenzvereinbarung (EULA) / End User License Agreement (EULA)
+🇩🇪 DEUTSCH (VERBINDLICHER TEIL FÜR DEUTSCHLAND)
+ENDNUTZER-LIZENZVEREINBARUNG (EULA)
+für die Software „Aegilock“
+Copyright (c) 2025 Thomas Röhrig
+
+WICHTIG – BITTE SORGFÄLTIG LESEN
+
+Diese Endnutzer-Lizenzvereinbarung („Vereinbarung“) ist ein rechtsgültiger Vertrag zwischen Ihnen (Einzelperson oder juristische Person) und Thomas Röhrig („Lizenzgeber“) bezüglich der Software „Aegilock“ („Software“).
+
+Mit der Installation, dem Kopieren oder der anderweitigen Nutzung der Software erklären Sie sich mit den Bedingungen dieser Vereinbarung einverstanden.
+
+1. LIZENZGEWÄHRUNG
+Der Lizenzgeber gewährt Ihnen eine nicht-exklusive, nicht übertragbare, nicht unterlizenzierbare Lizenz zur Installation und Nutzung einer Instanz der Software auf einem eigenen Server für interne Geschäftszwecke.
+
+2. EINSCHRÄNKUNGEN
+Sie dürfen die Software nicht:
+
+weiterverbreiten, vermieten, verleasen, verkaufen oder unterlizenzieren,
+
+verändern, zurückentwickeln, dekompilieren oder disassemblieren,
+
+Dritten zugänglich machen oder öffentlich verfügbar machen,
+
+zur Erstellung konkurrierender Produkte verwenden.
+
+3. EIGENTUM
+Diese Lizenz gewährt Ihnen lediglich Nutzungsrechte. Alle Rechte, Titel und Interessen an der Software verbleiben beim Lizenzgeber.
+
+4. SUPPORT UND UPDATES
+Sofern nicht anders schriftlich vereinbart, besteht kein Anspruch auf Support, Updates oder Fehlerbehebungen.
+
+5. BEENDIGUNG
+Diese Lizenz gilt bis zu ihrer Beendigung. Bei einem Verstoß gegen eine Bestimmung dieser Vereinbarung endet die Lizenz automatisch. In diesem Fall müssen Sie alle Kopien der Software dauerhaft vernichten.
+
+6. HAFTUNGSAUSSCHLUSS
+Die Software wird „wie besehen“ bereitgestellt, ohne jegliche Gewährleistung, weder ausdrücklich noch konkludent. Die Nutzung erfolgt auf eigenes Risiko.
+
+7. HAFTUNGSBESCHRÄNKUNG
+Der Lizenzgeber haftet nicht für Schäden (einschließlich, aber nicht beschränkt auf entgangene Gewinne, Betriebsunterbrechung oder Datenverlust), die durch die Nutzung oder Nichtnutzung der Software entstehen.
+
+8. MIT-KOMPONENTEN
+Diese Software kann Komponenten enthalten, die unter der MIT-Lizenz veröffentlicht wurden. Diese Komponenten unterliegen folgenden Bedingungen:
+
+MIT-Lizenz 
+Copyright (c) 2025 Thomas Röhrig 
+Hiermit wird unentgeltlich jeder Person, die eine Kopie dieser Software und der zugehörigen Dokumentationen (die „Software“) erhält, die Erlaubnis erteilt, uneingeschränkt mit der Software zu verfahren, einschließlich und ohne Ausnahme des Rechts, sie zu benutzen, kopieren, modifizieren, zusammenzufügen, veröffentlichen, verbreiten, unterlizenzieren und/oder zu verkaufen, und Personen, denen diese Software überlassen wird, diese Rechte zu verschaffen, unter den folgenden Bedingungen: 
+Der obige Urheberrechtshinweis und dieser Erlaubnishinweis sind in allen Kopien oder wesentlichen Teilen der Software beizufügen. 
+DIE SOFTWARE WIRD OHNE JEDE AUSDRÜCKLICHE ODER IMPLIZIERTE GARANTIE BEREITGESTELLT, EINSCHLIESSLICH DER GARANTIEN DER MARKTGÄNGIGKEIT, DER TAUGLICHKEIT FÜR EINEN BESTIMMTEN ZWECK UND DER NICHTVERLETZUNG. IN KEINEM FALL SIND DIE AUTOREN ODER COPYRIGHTINHABER FÜR ANSPRÜCHE, SCHÄDEN ODER SONSTIGE HAFTUNGEN VERANTWORTLICH, OB IN EINER KLAGE AUS VERTRAG, UNERLAUBTER HANDLUNG ODER ANDERWEITIG, DIE AUS DER SOFTWARE ODER DER BENUTZUNG ODER SONSTIGEN UMGÄNGEN MIT DER SOFTWARE ENTSTEHEN.
+
+Copyright (c) 2025 Thomas Röhrig
+
+9. ANWENDBARES RECHT UND GERICHTSSTAND
+Diese Vereinbarung unterliegt dem Recht der Bundesrepublik Deutschland, Gerichtsstand ist Deutschland, unter Ausschluss internationaler Kollisionsnormen.

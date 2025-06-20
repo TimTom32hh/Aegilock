@@ -1,0 +1,54 @@
+END USER LICENSE AGREEMENT (EULA)
+for the software "Aegilock"
+Copyright (c) 2025 Thomas Röhrig
+
+IMPORTANT – READ CAREFULLY
+
+This End User License Agreement (“Agreement”) is a legal contract between you (an individual or legal entity) and Thomas Röhrig (“Licensor”) regarding the software “Aegilock” (“Software”).
+
+By installing, copying, or otherwise using the Software, you agree to the terms of this Agreement.
+
+1. LICENSE GRANT
+The Licensor grants you a non-exclusive, non-transferable, non-sublicensable license to install and use one instance of the Software on your own server for internal business purposes only.
+
+2. RESTRICTIONS
+You may not:
+
+redistribute, rent, lease, sell, or sublicense the Software,
+
+modify, reverse engineer, decompile, or disassemble it,
+
+make it accessible or publicly available to third parties,
+
+use it to build competing products.
+
+3. OWNERSHIP
+This license grants you only the right to use the Software. All rights, title, and interest in the Software remain with the Licensor.
+
+4. SUPPORT & UPDATES
+Unless otherwise agreed in writing, there is no entitlement to support, updates, or bug fixes.
+
+5. TERMINATION
+This license is effective until terminated. It terminates automatically if you breach any part of this Agreement. Upon termination, you must destroy all copies of the Software.
+
+6. WARRANTY DISCLAIMER
+The Software is provided "as is", without any warranty, express or implied. Use is at your own risk.
+
+7. LIMITATION OF LIABILITY
+The Licensor shall not be liable for any damages (including, but not limited to, lost profits, business interruption, or data loss) arising from the use or inability to use the Software.
+
+8. MIT COMPONENTS
+This Software may include components licensed under the MIT License, which states:
+
+MIT License
+
+Copyright (c) 2025 Thomas Röhrig
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+9. GOVERNING LAW AND JURISDICTION
+This Agreement shall be governed by the laws of Germany. Jurisdiction lies exclusively in Germany, excluding international conflict of law rules.
