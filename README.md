@@ -1,113 +1,55 @@
-# Aegilock
-Aegilock Bot Blocker
+Aegilock API – Webseiten-Schutz über ML-basierte Bot-Erkennung
+Aegilock schützt Ihre Webseite automatisch und unsichtbar vor unerwünschten automatisierten Zugriffen (Bots), Spam-Attacken und Formularmissbrauch.
 
-Aegilock - Self-Hosted Edition
-=======================================
+Wie funktioniert der Schutzmechanismus?
+Aegilock verwendet ein intelligentes, Machine-Learning-gestütztes Scoring-System, um jeden eingehenden Zugriff in Echtzeit zu analysieren. Dazu werden technische Signale des Browsers, des User-Agents, des Verhaltens und des Inhalts verwendet, um automatisierte Bots zuverlässig zu erkennen. Erkannte Bot-Zugriffe werden unmittelbar blockiert, während menschliche Benutzer die Webseite ohne Einschränkungen nutzen können.
 
-Aegilock – Kundeninstallation (README)
+Nach der Integration sind Ihre gesamte Webseite, inklusive aller Formulare, automatisch geschützt. Es ist keine zusätzliche Interaktion der Nutzer notwendig.
 
-Willkommen zur Aegilock-Sicherheitslösung! Diese Anleitung hilft Ihnen, Aegilock On-Premise auf Ihrem eigenen Server produktionsreif einzurichten.
+Einbindung in Ihre Webseite
+Die Einbindung erfolgt einfach per JavaScript auf Ihrer Webseite.
 
-Voraussetzungen
+1. Integrieren Sie folgenden JavaScript-Code direkt vor dem schließenden </body>-Tag auf allen HTML-Seiten, die Sie schützen möchten:
 
-•	Ubuntu 22.04 LTS (empfohlen)
-•	Root- oder Sudo-Rechte
-•	Eigene Subdomain (z. B. aegilock.ihre-domain.de)
-•	Vorinstalliert: Node.js v18+, Nginx, Git, unzip, certbot
+html
+Kopieren
+Bearbeiten
+<script src="https://aegilock.de/aegilock-protect.js" data-sitekey="IHR_SITEKEY"></script>
+Ersetzen Sie dabei IHR_SITEKEY mit dem individuellen Sitekey, den Sie von Aegilock erhalten haben.
 
-sudo apt update && sudo apt install nginx git unzip nodejs npm certbot python3-certbot-nginx -y
-________________________________________
-1. Projekt entpacken und vorbereiten
+Beispiel:
 
-mkdir -p /opt/aegilock
-cd /opt/aegilock
+<script src="https://aegilock.de/aegilock-protect.js" data-sitekey="grabbeltier5"></script>
+API-Integration (optional)
+Sie können zusätzlich direkt die Aegilock REST-API verwenden, um Zugriffe manuell zu validieren:
 
-unzip aegilock.zip
-
-Projektstruktur prüfen:
-/opt/aegilock/
-├── backend/
-│   ├── server.js
-│   ├── .env (wird erstellt)
-├── frontend/
-│   ├── app.tsx (angepasst)
-├── config/
-├── logs/
-├── blocklists/
-└── README.md
-________________________________________
-
-2. .env-Datei im Backend anlegen
-PORT=3000
-ALLOWED_ORIGINS=https://aegilock.ihre-domain.de
-LOG_LEVEL=info
-
-BLOCKLIST_PATH=../blocklists/
-In server.js ist dotenv aktiv:
-require('dotenv').config();
-const port = process.env.PORT || 3000;
-________________________________________
-
-3. Socket.IO im Frontend verbinden
-In frontend/app.tsx:
-const socket: Socket = io('https://aegilock.ihre-domain.de', {
-  transports: ['websocket'],
-  autoConnect: true
-});
-________________________________________
-
-4. Nginx Reverse Proxy konfigurieren
-Pfad: /etc/nginx/sites-available/aegilock
-server {
-    listen 80;
-    server_name aegilock.ihre-domain.de;
-
-    location / {
-        proxy_pass http://localhost:3000;
-        proxy_http_version 1.1;
-        proxy_set_header Upgrade $http_upgrade;
-        proxy_set_header Connection 'upgrade';
-        proxy_set_header Host $host;
-        proxy_cache_bypass $http_upgrade;
-    }
+curl -X POST https://aegilock.de/api/predict \
+-H "Content-Type: application/json" \
+-H "X-Site-Key: IHR_SITEKEY" \
+-d '{"timestamp":"2025-06-29T20:00:00Z","ip":"127.0.0.1","path":"/","ua":"Browser-Agent","referrer":"","status":200}'
+Ein gültiger Sitekey liefert das Ergebnis des ML-Modells zurück, zum Beispiel:
+{
+  "bot_score": 0.006,
+  "blocked": false,
+  "threshold": 0.32
 }
-Symlink erstellen:
+Ein ungültiger oder deaktivierter Sitekey erzeugt eine Fehlermeldung:
 
-ln -s /etc/nginx/sites-available/aegilock /etc/nginx/sites-enabled/aegilock
+{
+  "error": "Ungültiger Sitekey"
+}
+Test & Validierung
+Prüfen Sie Ihre Einbindung, indem Sie Ihre Webseite besuchen.
 
-nginx -t && systemctl reload nginx
+Die Browser-Konsole (F12) zeigt den aktuellen Bot-Score zur Diagnose an.
 
-SSL aktivieren:
-certbot --nginx -d aegilock.ihre-domain.de
-________________________________________
+Formulare und weitere Seiteninhalte werden automatisch mitgeschützt.
 
-5. Backend starten
-
-cd /opt/aegilock/backend
-npm install
-node server.js
-
-Für Dauerbetrieb:
-npm install -g pm2
-pm2 start server.js --name aegilock
-pm2 save && pm2 startup
-________________________________________
-
-6. Test & Sicherheit
-•	Aufrufen: https://aegilock.ihre-domain.de
-•	Logs: /opt/aegilock/logs/
-•	IP-Blocking, GeoIP und User-Agent-Filter sind aktiv
-
-Zusätzliche Sicherheit:
-sudo apt install ufw fail2ban
-________________________________________
-
-Support & Lizenz
-Bitte wenden Sie sich für individuelle Anpassungen oder Lizenzsupport an:
+Support & Hilfe
+Bei Fragen oder Unterstützungsbedarf erreichen Sie uns unter:
 kontakt@aegilock.de
 
-Sicherheit:
-Du bist selbst für die Absicherung deines Servers verantwortlich.
+© 2025 Aegilock | Datenschutzkonforme Bot-Erkennung aus Deutschland
 
 Lizenz:
 MIT License – siehe LICENSE.txt
